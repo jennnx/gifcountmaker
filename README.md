@@ -1,58 +1,35 @@
-# create-svelte
+# Follower count gif maker
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![followers_movie](/static/followers.gif)
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+I use this to make fancy follower/revenue videos for my own Twitter account!
 
-## Creating a project
+I don't know After Effects, and I don't want to pay $15/month for something this simple.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## TLDR
+
+### Step 1
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Step 2
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+### Step 3
 
-## Building
+Use something like OBS or QuicktimePlayer and take a video. Upload it to Twitter for free money.
 
-To build your library:
+## Details
 
-```bash
-npm run package
-```
+- The text, numbers, timing, colors (gradients), etc. can all be adjusted in `src/routes/+page.svelte`
 
-To create a production version of your showcase app:
+- The icon can be adjusted by adding a custom `<svg>` element. Replace `src/routes/followers.svelte` with it and import it accordingly.
+  
+  - Set `stroke-width="1.5"` and `height="1em" width="1em"` on the new svg.
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+- All the styling is in pure CSS. No need to have any svelte knowledge!
