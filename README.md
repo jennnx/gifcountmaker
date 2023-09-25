@@ -22,7 +22,7 @@ npm run dev -- --open
 
 ### Step 3
 
-Use something like OBS or QuicktimePlayer and take a video. Upload it to Twitter for free money.
+Zoom in and use something like OBS or QuicktimePlayer and take a video. Upload it to Twitter for free money.
 
 ## Details
 
